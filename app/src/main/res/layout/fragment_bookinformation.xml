@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_list_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/bbbbold"
+                android:text="위대한 세포 : 노벨상을 받은 놀라운 발견들"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:paddingTop="40dp"
+                android:paddingBottom="40dp"/>
+
+            <TextView
+                android:id="@+id/tv_list_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/bbbbold"
+                android:text="금동호"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="20sp"
+                android:paddingBottom="40dp"/>
+
+            <TextView
+                android:id="@+id/tv_list_publish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/bbbbold"
+                android:text="출판사 : 서울 : 해나무"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingBottom="40dp"/>
+
+            <TextView
+                android:id="@+id/tv_list_ISBN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/bbbbold"
+                android:text="ISBN : 9791164050130"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingBottom="40dp"/>
+
+            <TextView
+                android:id="@+id/tv_list_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/bbbbold"
+                android:text="출판일 : 2019"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingBottom="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

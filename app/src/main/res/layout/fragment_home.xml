@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HomeFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="@font/bbbbold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="독서왕 님을 위한 \nAI 추천 도서" />
+
+            <ViewFlipper
+                android:id="@+id/flipper"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:id="@+id/img01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/book1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:background="@android:color/transparent"
+                    />
+
+                <ImageButton
+                    android:id="@+id/img02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/book2"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:background="@android:color/transparent"/>
+
+                <ImageButton
+                    android:id="@+id/img03"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/book3"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:background="@android:color/transparent"/>
+
+                <ImageButton
+                    android:id="@+id/img04"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/book4"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:background="@android:color/transparent"/>
+
+                <ImageButton
+                    android:id="@+id/img05"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/book5"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:background="@android:color/transparent"/>
+
+                <ImageButton
+                    android:id="@+id/img06"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/book6"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:background="@android:color/transparent"/>
+            </ViewFlipper>
+
+
+            <TextView
+                android:fontFamily="@font/bbbbold"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginLeft="10dp"
+                android:text="인기도서"/>
+
+            <ViewFlipper
+                android:id="@+id/flipper2"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:id="@+id/img001"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/book4"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:background="@android:color/transparent"/>
+
+                <ImageButton
+                    android:id="@+id/img002"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/book2"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:background="@android:color/transparent"/>
+
+                <ImageButton
+                    android:id="@+id/img003"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/book1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:background="@android:color/transparent"/>
+
+                <ImageButton
+                    android:id="@+id/img004"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/book3"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:background="@android:color/transparent"/>
+
+                <ImageButton
+                    android:id="@+id/img005"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/book6"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:background="@android:color/transparent"/>
+
+                <ImageButton
+                    android:id="@+id/img006"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/book5"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:background="@android:color/transparent"/>
+            </ViewFlipper>
+
+
+
+            <TextView
+                android:fontFamily="@font/bbbbold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="외부 추천도서"/>
+
+            <ViewFlipper
+                android:id="@+id/flipper3"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp">
+
+                <ImageButton
+                    android:id="@+id/img0001"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/book5"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:background="@android:color/transparent"/>
+
+                <ImageButton
+                    android:id="@+id/img0002"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/book2"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:background="@android:color/transparent"/>
+
+                <ImageButton
+                    android:id="@+id/img0003"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/book3"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:background="@android:color/transparent"/>
+
+                <ImageButton
+                    android:id="@+id/img0004"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/book4"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:background="@android:color/transparent"/>
+
+                <ImageButton
+                    android:id="@+id/img0005"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/book1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:background="@android:color/transparent"/>
+
+                <ImageButton
+                    android:id="@+id/img0006"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/book6"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:background="@android:color/transparent"/>
+            </ViewFlipper>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
