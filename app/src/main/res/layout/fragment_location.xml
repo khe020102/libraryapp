@@ -77,7 +77,7 @@
                         android:layout_marginBottom="8dp"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="474 금225ㅇ"
+                        android:text=""
                         android:textSize="15dp" />
 
                     <TextView
@@ -87,7 +87,7 @@
                         android:layout_marginBottom="8dp"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="제2자료실-일반자료(4층)"
+                        android:text=""
                         android:textSize="15dp" />
                 </TableRow>
 
