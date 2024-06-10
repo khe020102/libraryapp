@@ -18,10 +18,7 @@ class BooksFragment : Fragment() {
     private lateinit var binding: FragmentBooksBinding
     private lateinit var bookAdapter: BookAdapter
 
-    private val recommendedBooks = api.getRecommendedBooks()
-
-    private val popularBooks = api.getPopularBooks()
-    private val newBooks = getNewBooks()
+    
     val BASE_URL = "http://52.78.146.166:8080/api/"
 
     val retrofit = Retrofit.Builder()
@@ -29,6 +26,11 @@ class BooksFragment : Fragment() {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     val api = retrofit.create(API::class.java)
+
+    private val recommendedBooks = api.getRecommendedBooks()
+
+    private val popularBooks = api.getPopularBooks()
+    private val newBooks = api.getNewBooks()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
